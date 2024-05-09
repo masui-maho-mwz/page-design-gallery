@@ -1,19 +1,24 @@
+import { AbstractLogo } from '@/app/components/elements/logos/tech-quest-logo';
 import styles from './styles.module.css';
 
 export const Header = () => {
   return (
-    <header className={styles.header}>
-      <div className={styles.logo}>Logo</div>
-      <nav>
-        <ul className={styles.menu}>
-          <li>
-            <button className={styles.login}>ログイン</button>
-          </li>
-          <li>
-            <button className={styles.signup}>新規登録</button>
-          </li>
-        </ul>
-      </nav>
+    <header className={styles.root}>
+      <div>
+        <AbstractLogo />
+      </div>
+      <div className={styles.menu}>
+        <form action="" aria-label="記事、質問を検索" className={styles.form}>
+          <span className={styles.icon}>🔍</span>
+          <input type="search" placeholder="記事、質問を検索" value="" className={styles.input}></input>
+        </form>
+        <a href="" className={styles.login}>
+          ログイン
+        </a>
+        <a href="" className={styles.registrations}>
+          新規登録
+        </a>
+      </div>
     </header>
   );
 };

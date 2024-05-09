@@ -5,12 +5,12 @@
 
 .main {
   background-color: aquamarine;
-  margin: 0 8px 0 24px;
+  margin: 0 0.5rem 0 1.5rem;
   flex: 4;
 }
 
 .side {
   background-color: bisque;
-  margin: 0 24px 0 8px;
+  margin: 0 1.5rem 0 0.5rem;
   flex: 1;
 }
