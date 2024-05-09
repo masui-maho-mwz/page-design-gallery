@@ -24,7 +24,7 @@
   width: 1rem;
   left: 0.5rem;
   position: absolute;
-  top: 50%;
+  top: 43%;
   transform: translateY(-50%);
   color: rgb(0 0 0 / 38%);
 }
@@ -50,7 +50,7 @@
   color: #357a00;
   margin-left: 0.25rem;
   border-radius: 0.5rem;
-  border: 1px solid #357a00;
+  border: 0.0625rem solid #357a00;
   padding: 0.375rem 0.9375rem;
   text-decoration: none;
 }

@@ -1,0 +1,15 @@
+.root {
+  position: relative;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  color: rgb(0 0 0 / 60%);
+  display: flex;
+  font-size: 1.25rem;
+  height: 2rem;
+  justify-content: center;
+  width: 2rem;
+}

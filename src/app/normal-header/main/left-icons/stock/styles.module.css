@@ -1,0 +1,28 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  align-items: center;
+  background-color: #fff;
+  border: 0.0625rem solid rgb(0 0 0 / 12%);
+  border-radius: 50%;
+  display: flex;
+  height: 2.5rem;
+  justify-content: center;
+  width: 2.5rem;
+}
+
+.svg {
+  fill: rgb(0 0 0 / 60%);
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.count {
+  margin-top: 0.25rem;
+  color: rgb(0 0 0 / 60%);
+  font-size: 0.875rem;
+  font-weight: bold;
+}

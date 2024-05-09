@@ -1,4 +1,5 @@
 import { AbstractLogo } from '@/app/components/elements/logos/tech-quest-logo';
+import SearchIcon from '@mui/icons-material/Search';
 import styles from './styles.module.css';
 
 export const Header = () => {
@@ -9,7 +10,9 @@ export const Header = () => {
       </div>
       <div className={styles.menu}>
         <form action="" aria-label="記事、質問を検索" className={styles.form}>
-          <span className={styles.icon}>🔍</span>
+          <span className={styles.icon}>
+            <SearchIcon></SearchIcon>
+          </span>
           <input type="search" placeholder="記事、質問を検索" value="" className={styles.input}></input>
         </form>
         <a href="" className={styles.login}>
