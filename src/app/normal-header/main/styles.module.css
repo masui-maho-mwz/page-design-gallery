@@ -1,0 +1,16 @@
+.root {
+  display: flex;
+  height: 100vh;
+}
+
+.main {
+  background-color: aquamarine;
+  margin: 0 8px 0 24px;
+  flex: 4;
+}
+
+.side {
+  background-color: bisque;
+  margin: 0 24px 0 8px;
+  flex: 1;
+}
