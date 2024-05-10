@@ -2,4 +2,9 @@
   /* TODO: order: 2;の使い方と、今回order: 2;を使った実装で良いかを確認したい。見本サイトに合わせてoderを使いました。モバイルビューとデスクトップビューで要素の順序を入れ替えたい場合などに使用できるようです。 */
   order: 2;
   width: 300px;
+  position: static;
+}
+
+.navFixed {
+  position: fixed;
 }
