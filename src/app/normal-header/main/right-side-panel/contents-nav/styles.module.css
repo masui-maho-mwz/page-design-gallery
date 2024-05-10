@@ -1,0 +1,38 @@
+.root {
+  font-size: 14px;
+  margin-top: 24px;
+}
+/* TODO: スクロールバー表示されていない。真ん中の記事を表示する要素作成後に再度確認が必要 */
+.lists {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  max-height: calc(-306px + 100vh);
+  scrollbar-width: thin;
+  scrollbar-color: #edeeee transparent;
+}
+
+.items {
+  list-style: none;
+}
+
+.item {
+  list-style-type: none;
+}
+
+.link {
+  border-radius: 4px;
+  color: rgb(0 0 0 / 60%);
+  display: block;
+  padding: 4px 8px;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.link::focus {
+  background-color: #edeeee;
+  color: rgb(0 0 0 / 87%);
+}
+
+.index {
+  padding-left: 1em;
+}

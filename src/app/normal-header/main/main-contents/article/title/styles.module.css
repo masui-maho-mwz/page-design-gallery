@@ -1,0 +1,50 @@
+.root {
+  margin-bottom: 48px;
+}
+
+.name {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  gap: 0px 8px;
+  line-height: 1.8;
+  width: 100%;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+.relation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 16px;
+  list-style: none;
+}
+
+.link {
+  background-color: #edeeee;
+  border-radius: 4px;
+  color: rgb(0 0 0 / 60%);
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0px 6px;
+  position: relative;
+  text-decoration: none;
+  /* TODO: zindex まだいる？ */
+  z-index: 1;
+}
+
+.date {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  gap: 0px 8px;
+  margin-top: 8px;
+  color: rgb(0 0 0 / 60%);
+}

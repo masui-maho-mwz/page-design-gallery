@@ -1,21 +1,8 @@
 .root {
   display: flex;
-  height: 100vh;
   background-color: #f5f6f6;
   gap: 3.5rem;
   justify-content: center;
   padding: 1rem 1.5rem 0;
-  padding-top: 3.5rem;
-}
-
-.article {
-  background-color: aquamarine;
-  margin: 0 0.5rem 0 1.5rem;
-  flex: 4;
-}
-
-.side {
-  background-color: bisque;
-  margin: 0 1.5rem 0 0.5rem;
-  flex: 1;
+  padding: 3.5rem 0;
 }
