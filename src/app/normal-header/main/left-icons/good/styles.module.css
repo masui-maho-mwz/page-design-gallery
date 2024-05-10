@@ -1,0 +1,29 @@
+.icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  position: relative;
+}
+
+.svg {
+  fill: none;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle {
+  fill: #fff;
+  stroke: rgb(0 0 0 / 12%);
+}
+
+.path {
+  fill: rgb(0 0 0 / 60%);
+}
+
+.count {
+  color: rgb(0 0 0 / 60%);
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding-top: 0.25rem;
+}

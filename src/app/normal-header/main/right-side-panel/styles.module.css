@@ -1,0 +1,10 @@
+.root {
+  order: 2;
+  width: 300px;
+  position: static;
+}
+
+.navFixed {
+  position: fixed;
+  width: 300px;
+}

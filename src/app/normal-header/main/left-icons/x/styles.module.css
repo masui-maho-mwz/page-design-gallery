@@ -1,0 +1,17 @@
+.root {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: rgb(0 0 0 / 60%);
+  display: flex;
+  font-size: 1.25rem;
+  height: 2rem;
+  justify-content: center;
+  width: 2rem;
+}
+
+.svg {
+  height: 1.25rem;
+  fill: #000000;
+  width: 1.25rem;
+}

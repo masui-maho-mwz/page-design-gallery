@@ -1,0 +1,37 @@
+.root {
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+}
+
+.lists {
+  max-height: calc(-306px + 100vh);
+}
+
+.items {
+  list-style: none;
+}
+
+.item {
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+}
+
+.link {
+  border-radius: 0.25rem;
+  color: rgb(0 0 0 / 60%);
+  display: block;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.link:hover,
+.active {
+  background-color: #edeeee;
+  color: rgb(0 0 0 / 87%);
+  font-weight: 600;
+}
+
+.index {
+  padding-left: 1em;
+}
