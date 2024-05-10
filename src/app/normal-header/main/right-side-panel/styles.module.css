@@ -7,4 +7,5 @@
 
 .navFixed {
   position: fixed;
+  width: 300px;
 }
