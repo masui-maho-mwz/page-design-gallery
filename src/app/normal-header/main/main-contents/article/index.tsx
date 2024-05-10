@@ -12,26 +12,24 @@ export const Article = ({ setActiveSection }: Props) => {
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.target instanceof HTMLElement) {
-            setActiveSection(entry.target.dataset.section || '');
+    const handleScroll = () => {
+      const currentScrollPosition = window.scrollY;
+      let activeSection = '';
+
+      sectionRefs.current.forEach((section, index) => {
+        if (section) {
+          const sectionTop = section.getBoundingClientRect().top + currentScrollPosition;
+          if (sectionTop <= currentScrollPosition && sectionTop + section.offsetHeight > currentScrollPosition) {
+            activeSection = `section${index + 1}`;
           }
-        });
-      },
-      { rootMargin: '-50% 0px -50% 0px', threshold: 0 },
-    );
-
-    sectionRefs.current.forEach((section) => {
-      if (section) observer.observe(section);
-    });
-
-    return () => {
-      sectionRefs.current.forEach((section) => {
-        if (section) observer.unobserve(section);
+        }
       });
+
+      setActiveSection(activeSection);
     };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [setActiveSection]);
 
   return (
