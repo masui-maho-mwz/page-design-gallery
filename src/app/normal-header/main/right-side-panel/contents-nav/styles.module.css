@@ -1,6 +1,6 @@
 .root {
-  font-size: 14px;
-  margin-top: 24px;
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
 }
 
 .lists {
@@ -17,7 +17,7 @@
 }
 
 .link {
-  border-radius: 4px;
+  border-radius: 0.25rem;
   color: rgb(0 0 0 / 60%);
   display: block;
   padding: 0.25rem 0.5rem;
