@@ -11,7 +11,7 @@ export const Header = () => {
       <div className={styles.menu}>
         <form action="" aria-label="記事、質問を検索" className={styles.form}>
           <span className={styles.icon}>
-            <SearchIcon></SearchIcon>
+            <SearchIcon />
           </span>
           <input type="search" placeholder="記事、質問を検索" className={styles.input}></input>
         </form>

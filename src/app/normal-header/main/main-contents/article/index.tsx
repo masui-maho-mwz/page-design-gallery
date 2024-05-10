@@ -14,17 +14,28 @@ export const Article = ({ setActiveSection }: Props) => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPosition = window.scrollY;
-      const activeSection = sectionRefs.current.reduce((foundSection, section, index) => {
-        if (foundSection || !section) return foundSection;
+
+      const findActiveSection = (index = 0): string => {
+        if (index >= sectionRefs.current.length) {
+          return '';
+        }
+
+        const section = sectionRefs.current[index];
+        if (!section) {
+          return findActiveSection(index + 1);
+        }
 
         const sectionTop = section.getBoundingClientRect().top + currentScrollPosition;
-        if (sectionTop <= currentScrollPosition && sectionTop + section.offsetHeight > currentScrollPosition) {
+        const sectionBottom = sectionTop + section.offsetHeight;
+
+        if (sectionTop <= currentScrollPosition && sectionBottom > currentScrollPosition) {
           return `section${index + 1}`;
         }
 
-        return foundSection;
-      }, '');
+        return findActiveSection(index + 1);
+      };
 
+      const activeSection = findActiveSection();
       setActiveSection(activeSection);
     };
 

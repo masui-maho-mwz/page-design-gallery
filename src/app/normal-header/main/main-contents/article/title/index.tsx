@@ -2,7 +2,7 @@ import styles from './styles.module.css';
 
 export const Title = () => {
   return (
-    <div className={styles.root}>
+    <div>
       <div className={styles.name}>執筆者名</div>
       <h1 className={styles.title}>記事タイトル</h1>
       <ul className={styles.relation}>

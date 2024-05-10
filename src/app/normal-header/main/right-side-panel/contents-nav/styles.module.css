@@ -25,17 +25,13 @@
   line-height: 1.5;
 }
 
-.link::focus {
-  background-color: #edeeee;
-  color: rgb(0 0 0 / 87%);
-}
-
-.index {
-  padding-left: 1em;
-}
-
+.link:hover,
 .active {
   background-color: #edeeee;
   color: rgb(0 0 0 / 87%);
   font-weight: 600;
+}
+
+.index {
+  padding-left: 1em;
 }
