@@ -37,7 +37,7 @@ export const Article = ({ setActiveSection }: Props) => {
       <Title />
       <section
         className={styles.section}
-        data-section="section1"
+        id="section1"
         ref={(el) => {
           sectionRefs.current[0] = el;
         }}
@@ -49,7 +49,7 @@ export const Article = ({ setActiveSection }: Props) => {
       </section>
       <section
         className={styles.section}
-        data-section="section2"
+        id="section2"
         ref={(el) => {
           sectionRefs.current[1] = el;
         }}
@@ -67,7 +67,7 @@ export const Article = ({ setActiveSection }: Props) => {
       </section>
       <section
         className={styles.section}
-        data-section="section3"
+        id="section3"
         ref={(el) => {
           sectionRefs.current[2] = el;
         }}
@@ -79,7 +79,7 @@ export const Article = ({ setActiveSection }: Props) => {
       </section>
       <section
         className={styles.section}
-        data-section="section4"
+        id="section4"
         ref={(el) => {
           sectionRefs.current[3] = el;
         }}
@@ -115,7 +115,7 @@ export const Article = ({ setActiveSection }: Props) => {
       </section>
       <section
         className={styles.section}
-        data-section="section5"
+        id="section5"
         ref={(el) => {
           sectionRefs.current[4] = el;
         }}
