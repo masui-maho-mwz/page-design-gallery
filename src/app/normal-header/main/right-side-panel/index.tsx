@@ -5,7 +5,11 @@ import { ContentsNav } from '@/app/normal-header/main/right-side-panel/contents-
 import { useEffect, useRef, useState } from 'react';
 import styles from './styles.module.css';
 
-export const RightSidePanel = () => {
+type Props = {
+  activeSection: string;
+};
+
+export const RightSidePanel = ({ activeSection }: Props) => {
   const ref = useRef<HTMLDivElement | null>(null);
   const [isFixed, setIsFixed] = useState(false);
   const [bannerBottom, setBannerBottom] = useState(0);
@@ -29,7 +33,7 @@ export const RightSidePanel = () => {
         <BannerAdArea />
       </div>
       <div className={isFixed ? styles.navFixed : ''} style={{ top: isFixed ? 0 : bannerBottom }}>
-        <ContentsNav />
+        <ContentsNav activeSection={activeSection} />
       </div>
     </div>
   );

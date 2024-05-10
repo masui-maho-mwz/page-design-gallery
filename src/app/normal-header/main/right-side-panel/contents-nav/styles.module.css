@@ -36,3 +36,8 @@
 .index {
   padding-left: 1em;
 }
+
+.active {
+  background-color: #edeeee;
+  color: rgb(0 0 0 / 87%);
+}
