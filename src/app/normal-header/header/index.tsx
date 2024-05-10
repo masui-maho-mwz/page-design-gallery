@@ -13,7 +13,7 @@ export const Header = () => {
           <span className={styles.icon}>
             <SearchIcon></SearchIcon>
           </span>
-          <input type="search" placeholder="記事、質問を検索" value="" className={styles.input}></input>
+          <input type="search" placeholder="記事、質問を検索" className={styles.input}></input>
         </form>
         <a href="" className={styles.login}>
           ログイン
