@@ -1,0 +1,8 @@
+.root {
+  display: flex;
+  background-color: #f5f6f6;
+  gap: 3.5rem;
+  justify-content: center;
+  padding: 1rem 1.5rem 0;
+  padding: 3.5rem 0;
+}
